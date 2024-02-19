@@ -14,7 +14,7 @@ int main()
 	int N, M; // 수의 개수, 나눌 숫자
 	cin >> N >> M;
 	//합배열, 빈도수 저장 배열
-	vector<long> sum(N);
+	vector<long> sum(N+1);
 	vector<long> C(M);
 	long answer = 0;
 
@@ -30,7 +30,7 @@ int main()
 		if (remainder == 0) {
 			answer += 1;
 		}
-		C[remainder] +=1 ;
+		C[remainder] +=1;
 	}
 
 	for (int i = 0; i < M; i++) {
