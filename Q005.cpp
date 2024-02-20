@@ -1,5 +1,5 @@
 // 백준 11660번 : 구간 합 구하기 5
-// 구간 합 구하기 2
+// 구간 합 구하기 3
 
 #include<vector>
 #include<iostream>

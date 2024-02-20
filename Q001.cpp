@@ -1,5 +1,5 @@
 // 백준 11720번 : 숫자의 합
-// 자료구조 : 배열, 리스트, 백터
+// 자료구조 : 배열, 리스트, 백터 1
 
 #include<iostream>
 using namespace std;
