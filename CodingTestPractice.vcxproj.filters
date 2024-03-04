@@ -42,5 +42,8 @@
     <ClCompile Include="Q009.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Q010.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
