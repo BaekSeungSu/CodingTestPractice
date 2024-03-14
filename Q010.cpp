@@ -1,3 +1,6 @@
+// 백준 11003 : 최솟값 찾기 1
+// 슬라이딩 윈도우, 덱
+
 #include<iostream>
 #include<deque>
 using namespace std;

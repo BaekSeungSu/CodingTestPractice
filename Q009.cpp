@@ -1,3 +1,5 @@
+// 백준 12891번 : DNA 비밀번호
+// 슬라이딩 윈도우
 #include<iostream>
 #include<vector>
 using namespace std;
