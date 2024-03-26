@@ -8,27 +8,28 @@ using namespace std;
 int main()
 {
 	ios::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+	cin.tie(NULL);
+	cout.tie(NULL);
 	string N;
 	cin >> N;
 	vector<int> A;
 
 	for (int i = 0; i < N.size(); i++) {
-		A.push_back(N[i]-'0');
+		A.push_back(N[i] - '0');
 	}
 
 	for (int i = 0; i < A.size(); i++) {
-		int max = 0;
-		int id = 0;
-		for (int j = i; j < A.size(); j++) {
-			if (max < A[j]) {
-				max = A[j];
-				id = j;
+		int max = i;
+		for (int j = i + 1; j < A.size(); j++) {
+			if (A[max] < A[j]) {
+				max = j;
 			}
 		}
-		A[id] = A[i];
-		A[i] = max;
+		if (A[i] < A[max]) {
+			int tmp = A[i];
+			A[i] = A[max];
+			A[max] = tmp;
+		}
 	}
 
 	for (int i = 0; i < A.size(); i++) {
