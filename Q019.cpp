@@ -15,7 +15,7 @@ void quickSort(vector<int> &data, int start, int end) {
 		while (i <= end && data[i] <= data[pivot]) {
 			i++;
 		}
-		while (j >= start && data[j] >= data[pivot]) {
+		while (j > start && data[j] >= data[pivot]) {
 			j--;
 		}
 
@@ -51,5 +51,7 @@ int main()
 	quickSort(A, 0, N-1);
 
 	cout << A[K-1];
+
 	return 0;
 }
+
