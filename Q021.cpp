@@ -51,8 +51,10 @@ void merge_sort(int start, int end) {
 
 	while (idx_1 <= mid && idx_2 <= end) {
 		if (temp[idx_1] > temp[idx_2]) {
+			A[k] = temp[idx_2];
 			result += idx_2 - k;
-			A[k++] = temp[idx_2++];
+			k++;
+			idx_2++;
 		}
 		else {
 			A[k++] = temp[idx_1++];
